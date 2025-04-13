@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío 1 - JavaScript</title>
+    <link rel="stylesheet" href="assets\css\style.css">
+</head>
+
+<body>
+
+    <section>
+        <div class="card">
+            <div class="img-card"><img src="assets\img\PC.png" alt=""></div>
+              <h6>Laptop Gamer AMD</h6>
+
+              <p>Precio base: $<span id="precio-inicial"></span> </p>
+        
+              <p>Cantidad:
+                <span id="cantidad">0</span>
+                <button onclick="
+               valorBase = document.querySelector('#cantidad')
+
+               aumentarValor = Number(valorBase.innerText)+1
+
+               valorBase.innerHTML = aumentarValor"
+                >+</button>
+                <button onclick = "
+                valorBase = document.querySelector('#cantidad')
+
+                disminuirValor = Number(valorBase.innerText)-1 
+
+                valorBase.innerHTML = disminuirValor"
+                >-</button>
+                <button onclick="
+
+                valorBase = document.querySelector('#cantidad')
+    
+                multiplicado = Number(valorBase.innerText) * precio
+    
+                document.querySelector('#valor-total').innerHTML = multiplicado 
+                  ">Agregar al carrito</button>
+
+              </p>
+            </div>
+        </div>
+    </section>
+
+   
+
+    <div id="total-section">
+        <p>Total a pagar: $<span id="valor-total">
+            
+
+
+    <script src="assets\js\script.js">
+    </script>
+</body>
+</html>
